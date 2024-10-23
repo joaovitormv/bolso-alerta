@@ -5,31 +5,49 @@ export const styles = StyleSheet.create({
     container: {
         flex: 1,
         alignItems: 'center',
-        justifyContent: 'center',
+        paddingTop: 70
     },
-    title: {
-      fontSize: 30,
-      fontWeight: 'bold',
-      textAlign: 'center',
-      color: colors.primary,
-      marginBottom: 20,
-    },
-    formRow: {
-      margin: 10,
-      flexDirection: 'row',
+    emergencia: {
+      width: 170,
+      paddingLeft: 5,
+      paddingRight: 5,
+      height: 150,
+      display: 'flex',
+      borderColor: "black",
+      borderWidth: 2,
+      justifyContent: 'space-evenly',
       alignItems: 'center',
-      borderWidth: 1,
-      borderColor: colors.primary,
-      borderRadius: 5,
+      borderRadius: 40,
+      marginBottom: 40
     },
-    icon: {
-      fontSize: 24,
-      color: colors.fourth,
-      padding: 10
+    iconeEmergencia: {
+      width: 90,
+      height: 90
     },
-    input: {
-      fontSize: 18,
-      padding: 5,
-      width: "80%"
+    textoEmergencia: {
+      fontFamily: "Hanuman_900Black",
+      textAlign: 'center',
+      fontSize: 16
+    },
+    titulo: {
+      width: 350,
+      height: 110,
+      display: 'flex',
+    },
+    textTitulo: {
+      fontFamily: "Hanuman_900Black",
+      textAlign: 'center',
+      fontSize: 25
+    },
+    opcaoRodape: {
+      padding: 20
+    },
+    iconeRodape: {
+      width: 50,
+      height: 50
+    },
+    textoRodape: {
+      fontFamily: "Hanuman_900Black",
+      color: colors.primary
     }
   })

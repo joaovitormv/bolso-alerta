@@ -32,11 +32,11 @@ export function Cadastro ({setPageI}: IPage){
           <Ionicons name="bag-check-sharp" size={24} color={"black"}/>
           <TextInput placeholder="Confirmar senha" style={styles.input} secureTextEntry />
         </View>
-        <TouchableOpacity onPress={() => setPageI(2)} style={styles.button}>
+        <TouchableOpacity onPress={() => setPageI("Emergencias")} style={styles.button}>
           <Text style={styles.buttonText}>Cadastrar</Text>
         </TouchableOpacity>
       </View>
-      <TouchableOpacity style={styles.emergencyButton} onPress={() => setPageI(3)}>
+      <TouchableOpacity style={styles.emergencyButton} onPress={() => setPageI("Outros")}>
         <Text style={styles.emergencyText}>Caso seja uma emergência, clique aqui!</Text>
       </TouchableOpacity>
     </View>
