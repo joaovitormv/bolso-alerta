@@ -36,7 +36,7 @@ export function Cadastro ({setPageI}: IPage){
           <Text style={styles.buttonText}>Cadastrar</Text>
         </TouchableOpacity>
       </View>
-      <TouchableOpacity style={styles.emergencyButton} onPress={() => setPageI("Outros")}>
+      <TouchableOpacity style={styles.emergencyButton} onPress={() => setPageI("Emergencias")}>
         <Text style={styles.emergencyText}>Caso seja uma emergência, clique aqui!</Text>
       </TouchableOpacity>
     </View>
