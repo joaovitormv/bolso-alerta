@@ -5,7 +5,7 @@ export const styles = StyleSheet.create({
     container: {
         flex: 1,
         alignItems: 'center',
-        paddingTop: 50
+        paddingTop: 50,
     },
     emergencia: {
       backgroundColor: colors.primary,
@@ -40,15 +40,35 @@ export const styles = StyleSheet.create({
       textAlign: 'center'
     },
     opcaoRodape: {
-      padding: 20
+      display: 'flex',
     },
     iconeRodape: {
       width: 50,
-      height: 50
+      height: 50,
+      position: 'absolute',
+      top: -50,
+      left: -160
+    },
+    iconeProximo: {
+      width: 50,
+      height: 50,
+      position: 'absolute',
+      top: -50,
+      right: -160
+    },
+    textoProximo: {
+      fontFamily: "Hanuman_900Black",
+      color: colors.primary,
+      position: 'absolute',
+      top: 0,
+      right: -170
     },
     textoRodape: {
       fontFamily: "Hanuman_900Black",
-      color: colors.primary
+      color: colors.primary,
+      position: 'absolute',
+      top: 0,
+      left: -163
     },
     caixaEndereco: {
       paddingTop: 20,

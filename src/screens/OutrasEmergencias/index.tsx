@@ -11,7 +11,7 @@ export function OutrasEmergencias ({setPageI, emergencia}: SubEmergenciasProps){
    return (
       <View style={styles.container}>
           <View style={styles.content}>
-            <Text style={styles.title}>EMERGENCIA TAL - OUTROS</Text>
+            <Text style={styles.title}>Outros</Text>
             <TextInput
               style={styles.input}
               placeholder="Descreva sua emergência de forma breve para que possamos te ajudar."
@@ -22,7 +22,7 @@ export function OutrasEmergencias ({setPageI, emergencia}: SubEmergenciasProps){
               <Text style={styles.buttonText}>ENVIAR</Text>
             </TouchableOpacity>
           </View>
-          <TouchableOpacity style={styles.backButton} onPress={() => setPageI("Emergencias")}>
+          <TouchableOpacity style={styles.backButton} onPress={() => setPageI(emergencia)}>
             <Image source={require('../../assets/voltar.png')} style={styles.iconeRodape} />
           </TouchableOpacity>
           
