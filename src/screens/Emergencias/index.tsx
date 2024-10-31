@@ -3,11 +3,11 @@ import { View, Text, TouchableOpacity, Image, ScrollView } from "react-native"
 import { AntDesign, MaterialCommunityIcons, MaterialIcons } from '@expo/vector-icons';
 import { styles } from "./style";
 
-export function Emergencias({ setPageI, setEmergenciaI }: IPage) {
+export function Emergencias({ setPageI, setEmergenciaI, setSubEmergenciaI }: IPage) {
     return (
         <ScrollView style={styles.container}>
             <View style={styles.suporte}>
-                <TouchableOpacity onPress={() => setPageI("Cadastro")}>
+                <TouchableOpacity onPress={() => setPageI("Perfil")}>
                     <Image source={require('../../assets/User.png')} style={styles.user} />
                 </TouchableOpacity>   
                 <TouchableOpacity style={styles.suporte}>
@@ -23,12 +23,12 @@ export function Emergencias({ setPageI, setEmergenciaI }: IPage) {
             {/*Cada View dessas é uma linha com duas emergencias, com excessão da última, que tem apenas 1 emergência*/}
             <View style={styles.opcoesEmergencias}>
 
-                <TouchableOpacity onPress={() => setPageI("afogamento")} style={styles.emergencia}>
+                <TouchableOpacity onPress={() => setPageI("Afogamento")} style={styles.emergencia}>
                     <Image source={require('../../assets/IconesEmergencia/afogamento.png')} style={styles.iconeEmergencia} />
                     <Text style={styles.textoEmergencia}>AFOGAMENTO</Text>
                 </TouchableOpacity>
 
-                <TouchableOpacity onPress={() => setPageI("incendio")} style={styles.emergencia}>
+                <TouchableOpacity onPress={() => setPageI("Incêndio")} style={styles.emergencia}>
                     <Image source={require('../../assets/IconesEmergencia/fogo.png')} style={styles.iconeEmergencia} />
                     <Text style={styles.textoEmergencia}>INCÊNDIO</Text>
                 </TouchableOpacity>
@@ -42,7 +42,7 @@ export function Emergencias({ setPageI, setEmergenciaI }: IPage) {
                     <Text style={styles.textoEmergencia}>PARADA CARDÍACA</Text>
                 </TouchableOpacity>
 
-                <TouchableOpacity onPress={() => setPageI("engasgamento")} style={styles.emergencia}>
+                <TouchableOpacity onPress={() => setPageI("Engasgamento")} style={styles.emergencia}>
                     <Image source={require('../../assets/IconesEmergencia/engasgamento.png')} style={styles.iconeEmergencia} />
                     <Text style={styles.textoEmergencia}>ENGASGAMENTO</Text>
                 </TouchableOpacity>
@@ -51,12 +51,12 @@ export function Emergencias({ setPageI, setEmergenciaI }: IPage) {
 
             <View style={styles.opcoesEmergencias}>
 
-                <TouchableOpacity onPress={() => setPageI("transito")} style={styles.emergencia}>
+                <TouchableOpacity onPress={() => setPageI("Trânsito")} style={styles.emergencia}>
                     <Image source={require('../../assets/IconesEmergencia/transito.png')} style={styles.iconeEmergencia} />
                     <Text style={styles.textoEmergencia}>ACIDENTE DE TRÂNSITO</Text>
                 </TouchableOpacity>
 
-                <TouchableOpacity onPress={() => setPageI("animal")} style={styles.emergencia}>
+                <TouchableOpacity onPress={() => setPageI("Risco Animal")} style={styles.emergencia}>
                     <Image source={require('../../assets/IconesEmergencia/animal.png')} style={styles.iconeEmergencia} />
                     <Text style={styles.textoEmergencia}>PERIGO ANIMAL</Text>
                 </TouchableOpacity>
@@ -65,12 +65,12 @@ export function Emergencias({ setPageI, setEmergenciaI }: IPage) {
 
             <View style={styles.opcoesEmergencias}>
 
-                <TouchableOpacity onPress={() => setPageI("natureza")} style={styles.emergencia}>
+                <TouchableOpacity onPress={() => setPageI("Desastre Naturalatureza")} style={styles.emergencia}>
                     <Image source={require('../../assets/IconesEmergencia/natureza.png')} style={styles.iconeEmergencia} />
                     <Text style={styles.textoEmergencia}>DESASTRE NATURAL</Text>
                 </TouchableOpacity>
 
-                <TouchableOpacity onPress={() => setPageI("pessoas")} style={styles.emergencia}>
+                <TouchableOpacity onPress={() => setPageI("Resgate de Pessoas")} style={styles.emergencia}>
                     <Image source={require('../../assets/IconesEmergencia/resgate.png')} style={styles.iconeEmergencia} />
                     <Text style={styles.textoEmergencia}>RESGATE DE PESSOAS</Text>
                 </TouchableOpacity>
@@ -81,7 +81,8 @@ export function Emergencias({ setPageI, setEmergenciaI }: IPage) {
 
                 <TouchableOpacity style={styles.emergencia}  onPress={() => {
                     setPageI("Outros")
-                    setEmergenciaI("Emergencias")
+                    setEmergenciaI("Emergências")
+                    setSubEmergenciaI("Outros")
                 }
                 } >
                     <Image source={require('../../assets/IconesEmergencia/outros.png')} style={styles.iconeEmergencia} />

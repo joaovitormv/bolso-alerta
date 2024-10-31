@@ -7,7 +7,7 @@ interface SubEmergenciasProps extends IPage {
 }
 
 export function SubEmergencias({ Emergencia, setPageI, setSubEmergenciaI, setEmergenciaI }: SubEmergenciasProps) {
-    if (Emergencia == "afogamento") {
+    if (Emergencia == "Afogamento") {
         return (
             <>
                 <View style={styles.container}>
@@ -26,7 +26,7 @@ export function SubEmergencias({ Emergencia, setPageI, setSubEmergenciaI, setEme
                         <TouchableOpacity onPress={() => {
                             setPageI("Endereco"),
                             setSubEmergenciaI("AFOGAMENTO EM RIO")
-                            setEmergenciaI("afogamento")
+                            setEmergenciaI("Afogamento")
                         }} style={styles.emergencia}>
                             <Image source={require('../../assets/IconesSubEmergencia/rio.png')} style={styles.iconeEmergencia} />
                             <Text style={styles.textoEmergencia}>AFOGAMENTO EM RIO</Text>
@@ -35,7 +35,7 @@ export function SubEmergencias({ Emergencia, setPageI, setSubEmergenciaI, setEme
                         <TouchableOpacity style={styles.emergencia} onPress={() => {
                             setPageI("Endereco"),
                             setSubEmergenciaI("AFOGAMENTO EM PISCINA")
-                            setEmergenciaI("afogamento")
+                            setEmergenciaI("Afogamento")
                         }}
                         >
                             <Image source={require('../../assets/IconesSubEmergencia/piscina.png')} style={styles.iconeEmergencia} />
@@ -46,7 +46,7 @@ export function SubEmergencias({ Emergencia, setPageI, setSubEmergenciaI, setEme
                     <View style={styles.subOpcoesEmergencias}>
                         <TouchableOpacity style={styles.emergencia} onPress={() => {
                             setPageI("Outros"),
-                            setEmergenciaI("afogamento")
+                            setEmergenciaI("Afogamento")
                         }}>
                             <Image source={require('../../assets/IconesEmergencia/outros.png')} style={styles.iconeEmergencia} />
                             <Text style={styles.textoEmergencia}>OUTRO TIPO</Text>
@@ -58,7 +58,7 @@ export function SubEmergencias({ Emergencia, setPageI, setSubEmergenciaI, setEme
                 {/*Rodapé*/}
                 <View>
                     <View style={styles.opcaoRodape}>
-                        <TouchableOpacity onPress={() => setPageI("Emergencias")}>
+                        <TouchableOpacity onPress={() => setPageI("Emergências")}>
                             <Image source={require('../../assets/voltar.png')} style={styles.iconeRodape} />
                         </TouchableOpacity>
                         <Text style={styles.textoRodape}>VOLTAR</Text>
@@ -66,7 +66,7 @@ export function SubEmergencias({ Emergencia, setPageI, setSubEmergenciaI, setEme
                 </View>
             </>
         )
-    } else if (Emergencia == "incendio") {
+    } else if (Emergencia == "Incêndio") {
         return (
             <>
                 <ScrollView style={styles.containerScrollView}>
@@ -85,7 +85,7 @@ export function SubEmergencias({ Emergencia, setPageI, setSubEmergenciaI, setEme
                         <TouchableOpacity style={styles.emergencia} onPress={() => {
                             setPageI("Endereco"),
                             setSubEmergenciaI("INCÊNDIO RESIDENCIAL")
-                            setEmergenciaI("incendio")
+                            setEmergenciaI("Incêndio")
                         }}>
                             <Image source={require('../../assets/IconesSubEmergencia/casa.png')} style={styles.iconeEmergencia} />
                             <Text style={styles.textoEmergencia}>INCÊNDIO RESIDENCIAL</Text>
@@ -94,7 +94,7 @@ export function SubEmergencias({ Emergencia, setPageI, setSubEmergenciaI, setEme
                         <TouchableOpacity style={styles.emergencia} onPress={() => {
                             setPageI("Endereco"),
                             setSubEmergenciaI("INCÊNDIO FLORESTAL")
-                            setEmergenciaI("incendio")
+                            setEmergenciaI("Incêndio")
                         }}>
                             <Image source={require('../../assets/IconesSubEmergencia/floresta.png')} style={styles.iconeEmergencia} />
                             <Text style={styles.textoEmergencia}>INCÊNDIO FLORESTAL</Text>
@@ -105,7 +105,7 @@ export function SubEmergencias({ Emergencia, setPageI, setSubEmergenciaI, setEme
                         <TouchableOpacity style={styles.emergencia} onPress={() => {
                             setPageI("Endereco"),
                             setSubEmergenciaI("INCÊNDIO INDUSTRIAL")
-                            setEmergenciaI("incendio")
+                            setEmergenciaI("Incêndio")
                         }}>
                             <Image source={require('../../assets/IconesSubEmergencia/industria.png')} style={styles.iconeEmergencia} />
                             <Text style={styles.textoEmergencia}>INCÊNDIO INDUSTRIAL</Text>
@@ -114,7 +114,7 @@ export function SubEmergencias({ Emergencia, setPageI, setSubEmergenciaI, setEme
                         <TouchableOpacity style={styles.emergencia} onPress={() => {
                             setPageI("Endereco"),
                             setSubEmergenciaI("INCÊNDIO EM VEÍCULO")
-                            setEmergenciaI("incendio")
+                            setEmergenciaI("Incêndio")
                         }}>
                             <Image source={require('../../assets/IconesSubEmergencia/carro.png')} style={styles.iconeEmergencia} />
                             <Text style={styles.textoEmergencia}>INCÊNDIO EM VEÍCULO</Text>
@@ -124,7 +124,7 @@ export function SubEmergencias({ Emergencia, setPageI, setSubEmergenciaI, setEme
                     <View style={styles.subOpcoesEmergencias}>
                         <TouchableOpacity style={styles.emergencia} onPress={() => {
                             setPageI("Outros"),
-                            setEmergenciaI("incendio")
+                            setEmergenciaI("Incêndio")
                         }}>
                             <Image source={require('../../assets/IconesEmergencia/outros.png')} style={styles.iconeEmergencia} />
                             <Text style={styles.textoEmergencia}>OUTRO TIPO</Text>
@@ -133,7 +133,7 @@ export function SubEmergencias({ Emergencia, setPageI, setSubEmergenciaI, setEme
 
                     {/*Rodapé*/}
                     <View style={styles.opcaoRodape}>
-                        <TouchableOpacity onPress={() => setPageI("Emergencias")}>
+                        <TouchableOpacity onPress={() => setPageI("Emergências")}>
                             <Image source={require('../../assets/voltar.png')} style={styles.iconeRodape} />
                         </TouchableOpacity>
                         <Text style={styles.textoRodape}>VOLTAR</Text>
@@ -141,7 +141,7 @@ export function SubEmergencias({ Emergencia, setPageI, setSubEmergenciaI, setEme
                 </ScrollView>
             </>
         )
-    } else if (Emergencia == "engasgamento") {
+    } else if (Emergencia == "Engasgamento") {
         return (
             <>
                 <View style={styles.containerScrollView}>
@@ -160,7 +160,7 @@ export function SubEmergencias({ Emergencia, setPageI, setSubEmergenciaI, setEme
                         <TouchableOpacity style={styles.emergencia} onPress={() => {
                             setPageI("Endereco"),
                             setSubEmergenciaI("ENGASGAMENTO DE CRIANÇA")
-                            setEmergenciaI("engasgamento")
+                            setEmergenciaI("Engasgamento")
                         }}>
                             <Image source={require('../../assets/IconesSubEmergencia/crianca.png')} style={styles.iconeEmergencia} />
                             <Text style={styles.textoEmergencia}>CRIANÇA</Text>
@@ -169,7 +169,7 @@ export function SubEmergencias({ Emergencia, setPageI, setSubEmergenciaI, setEme
                         <TouchableOpacity style={styles.emergencia} onPress={() => {
                             setPageI("Endereco"),
                             setSubEmergenciaI("ENGASGAMENTO DE ADULTO")
-                            setEmergenciaI("engasgamento")
+                            setEmergenciaI("Engasgamento")
                         }}>
                             <Image source={require('../../assets/IconesSubEmergencia/adulto.png')} style={styles.iconeEmergencia} />
                             <Text style={styles.textoEmergencia}>ADULTO</Text>
@@ -180,7 +180,7 @@ export function SubEmergencias({ Emergencia, setPageI, setSubEmergenciaI, setEme
                         <TouchableOpacity style={styles.emergencia} onPress={() => {
                             setPageI("Endereco"),
                             setSubEmergenciaI("ENGASGAMENTO DE IDOSO")
-                            setEmergenciaI("engasgamento")
+                            setEmergenciaI("Engasgamento")
                         }}>
                             <Image source={require('../../assets/IconesSubEmergencia/idoso.png')} style={styles.iconeEmergencia} />
                             <Text style={styles.textoEmergencia}>IDOSO</Text>
@@ -189,7 +189,7 @@ export function SubEmergencias({ Emergencia, setPageI, setSubEmergenciaI, setEme
                 </View>
                 {/*Rodapé*/}
                 <View style={styles.opcaoRodape}>
-                    <TouchableOpacity onPress={() => setPageI("Emergencias")}>
+                    <TouchableOpacity onPress={() => setPageI("Emergências")}>
                         <Image source={require('../../assets/voltar.png')} style={styles.iconeRodape} />
                     </TouchableOpacity>
                     <Text style={styles.textoRodape}>VOLTAR</Text>
@@ -197,7 +197,7 @@ export function SubEmergencias({ Emergencia, setPageI, setSubEmergenciaI, setEme
 
             </>
         )
-    } else if (Emergencia == "transito") {
+    } else if (Emergencia == "Trânsito") {
         return (
             <>
                 <ScrollView style={styles.containerScrollView}>
@@ -216,7 +216,7 @@ export function SubEmergencias({ Emergencia, setPageI, setSubEmergenciaI, setEme
                         <TouchableOpacity style={styles.emergencia} onPress={() => {
                             setPageI("Endereco"),
                             setSubEmergenciaI("COLISÃO")
-                            setEmergenciaI("transito")
+                            setEmergenciaI("Trânsito")
                         }}>
                             <Image source={require('../../assets/IconesEmergencia/transito.png')} style={styles.iconeEmergencia} />
                             <Text style={styles.textoEmergencia}>COLISÃO</Text>
@@ -225,7 +225,7 @@ export function SubEmergencias({ Emergencia, setPageI, setSubEmergenciaI, setEme
                         <TouchableOpacity style={styles.emergencia} onPress={() => {
                             setPageI("Endereco"),
                             setSubEmergenciaI("ACIDENTE DE MOTO")
-                            setEmergenciaI("transito")
+                            setEmergenciaI("Trânsito")
                         }}>
                             <Image source={require('../../assets/IconesSubEmergencia/moto.png')} style={styles.iconeEmergencia} />
                             <Text style={styles.textoEmergencia}>ACIDENTE DE MOTO</Text>
@@ -236,7 +236,7 @@ export function SubEmergencias({ Emergencia, setPageI, setSubEmergenciaI, setEme
                         <TouchableOpacity style={styles.emergencia} onPress={() => {
                             setPageI("Endereco"),
                             setSubEmergenciaI("ACIDENTE COM ANIMAIS")
-                            setEmergenciaI("transito")
+                            setEmergenciaI("Trânsito")
                         }}>
                             <Image source={require('../../assets/IconesSubEmergencia/acidenteAnimal.png')} style={styles.iconeEmergencia} />
                             <Text style={styles.textoEmergencia}>ACIDENTE COM ANIMAIS</Text>
@@ -245,7 +245,7 @@ export function SubEmergencias({ Emergencia, setPageI, setSubEmergenciaI, setEme
                         <TouchableOpacity style={styles.emergencia} onPress={() => {
                             setPageI("Endereco"),
                             setSubEmergenciaI("ACIDENTE COM PEDESTRES")
-                            setEmergenciaI("transito")
+                            setEmergenciaI("Trânsito")
                         }}>
                             <Image source={require('../../assets/IconesSubEmergencia/pedestre.png')} style={styles.iconeEmergencia} />
                             <Text style={styles.textoEmergencia}>ACIDENTE COM PEDESTRES</Text>
@@ -255,7 +255,7 @@ export function SubEmergencias({ Emergencia, setPageI, setSubEmergenciaI, setEme
                     <View style={styles.subOpcoesEmergencias}>
                         <TouchableOpacity style={styles.emergencia} onPress={() => {
                             setPageI("Outros"),
-                            setEmergenciaI("transito")
+                            setEmergenciaI("Trânsito")
                         }}>
                             <Image source={require('../../assets/IconesEmergencia/outros.png')} style={styles.iconeEmergencia} />
                             <Text style={styles.textoEmergencia}>OUTRO TIPO</Text>
@@ -264,7 +264,7 @@ export function SubEmergencias({ Emergencia, setPageI, setSubEmergenciaI, setEme
 
                     {/*Rodapé*/}
                     <View style={styles.opcaoRodape}>
-                        <TouchableOpacity onPress={() => setPageI("Emergencias")}>
+                        <TouchableOpacity onPress={() => setPageI("Emergências")}>
                             <Image source={require('../../assets/voltar.png')} style={styles.iconeRodape} />
                         </TouchableOpacity>
                         <Text style={styles.textoRodape}>VOLTAR</Text>
@@ -272,7 +272,7 @@ export function SubEmergencias({ Emergencia, setPageI, setSubEmergenciaI, setEme
                 </ScrollView>
             </>
         )
-    } else if (Emergencia == "animal") {
+    } else if (Emergencia == "Risco Animal") {
         return (
             <>
                 <ScrollView style={styles.containerScrollView}>
@@ -291,7 +291,7 @@ export function SubEmergencias({ Emergencia, setPageI, setSubEmergenciaI, setEme
                         <TouchableOpacity style={styles.emergencia} onPress={() => {
                             setPageI("Endereco"),
                             setSubEmergenciaI("ATAQUE ANIMAL")
-                            setEmergenciaI("animal")
+                            setEmergenciaI("Risco Animal")
                         }}>
                             <Image source={require('../../assets/IconesSubEmergencia/raposa.png')} style={styles.iconeEmergencia} />
                             <Text style={styles.textoEmergencia}>ATAQUE SELVAGEM</Text>
@@ -300,7 +300,7 @@ export function SubEmergencias({ Emergencia, setPageI, setSubEmergenciaI, setEme
                         <TouchableOpacity style={styles.emergencia} onPress={() => {
                             setPageI("Endereco"),
                             setSubEmergenciaI("ATAQUE DOMÉSTICO")
-                            setEmergenciaI("animal")
+                            setEmergenciaI("Risco Animal")
                         }}>
                             <Image source={require('../../assets/IconesSubEmergencia/domestico.png')} style={styles.iconeEmergencia} />
                             <Text style={styles.textoEmergencia}>ATAQUE DOMÉSTICO</Text>
@@ -311,7 +311,7 @@ export function SubEmergencias({ Emergencia, setPageI, setSubEmergenciaI, setEme
                         <TouchableOpacity style={styles.emergencia} onPress={() => {
                             setPageI("Endereco"),
                             setSubEmergenciaI("RESGATE")
-                            setEmergenciaI("animal")
+                            setEmergenciaI("Risco Animal")
                         }}>
                             <Image source={require('../../assets/IconesSubEmergencia/resgate.png')} style={styles.iconeEmergencia} />
                             <Text style={styles.textoEmergencia}>RESGATE</Text>
@@ -320,7 +320,7 @@ export function SubEmergencias({ Emergencia, setPageI, setSubEmergenciaI, setEme
                         <TouchableOpacity style={styles.emergencia} onPress={() => {
                             setPageI("Endereco"),
                             setSubEmergenciaI("ENCHAME DE ABELHAS")
-                            setEmergenciaI("animal")
+                            setEmergenciaI("Risco Animal")
                         }}>
                             <Image source={require('../../assets/IconesSubEmergencia/abelha.png')} style={styles.iconeEmergencia} />
                             <Text style={styles.textoEmergencia}>ENXAME DE ABELHAS</Text>
@@ -330,7 +330,7 @@ export function SubEmergencias({ Emergencia, setPageI, setSubEmergenciaI, setEme
                     <View style={styles.subOpcoesEmergencias}>
                         <TouchableOpacity style={styles.emergencia} onPress={() => {
                             setPageI("Outros"),
-                            setEmergenciaI("animal")
+                            setEmergenciaI("Risco Animal")
                         }}>
                             <Image source={require('../../assets/IconesEmergencia/outros.png')} style={styles.iconeEmergencia} />
                             <Text style={styles.textoEmergencia}>OUTRO TIPO</Text>
@@ -339,7 +339,7 @@ export function SubEmergencias({ Emergencia, setPageI, setSubEmergenciaI, setEme
 
                     {/*Rodapé*/}
                     <View style={styles.opcaoRodape}>
-                        <TouchableOpacity onPress={() => setPageI("Emergencias")}>
+                        <TouchableOpacity onPress={() => setPageI("Emergências")}>
                             <Image source={require('../../assets/voltar.png')} style={styles.iconeRodape} />
                         </TouchableOpacity>
                         <Text style={styles.textoRodape}>VOLTAR</Text>
@@ -347,7 +347,7 @@ export function SubEmergencias({ Emergencia, setPageI, setSubEmergenciaI, setEme
                 </ScrollView>
             </>
         )
-    } else if (Emergencia == "natureza") {
+    } else if (Emergencia == "Desastre Natural") {
         return (
             <>
                 <View style={styles.containerScrollView}>
@@ -366,7 +366,7 @@ export function SubEmergencias({ Emergencia, setPageI, setSubEmergenciaI, setEme
                         <TouchableOpacity style={styles.emergencia} onPress={() => {
                             setPageI("Endereco"),
                             setSubEmergenciaI("ÁRVORE CAÍDA")
-                            setEmergenciaI("natureza")
+                            setEmergenciaI("Desastre Natural")
                         }}>
                             <Image source={require('../../assets/IconesSubEmergencia/arvoreCaida.png')} style={styles.iconeEmergencia} />
                             <Text style={styles.textoEmergencia}>ÁRVORE CAÍDA</Text>
@@ -375,7 +375,7 @@ export function SubEmergencias({ Emergencia, setPageI, setSubEmergenciaI, setEme
                         <TouchableOpacity style={styles.emergencia} onPress={() => {
                             setPageI("Endereco"),
                             setSubEmergenciaI("INUNDAÇÃO")
-                            setEmergenciaI("natureza")
+                            setEmergenciaI("Desastre Natural")
                         }}>
                             <Image source={require('../../assets/IconesSubEmergencia/inundacao.png')} style={styles.iconeEmergencia} />
                             <Text style={styles.textoEmergencia}>INUNDAÇÃO</Text>
@@ -386,7 +386,7 @@ export function SubEmergencias({ Emergencia, setPageI, setSubEmergenciaI, setEme
                         <TouchableOpacity style={styles.emergencia} onPress={() => {
                             setPageI("Endereco"),
                             setSubEmergenciaI("DESLIZAMENTO")
-                            setEmergenciaI("natureza")
+                            setEmergenciaI("Desastre Natural")
                         }}>
                             <Image source={require('../../assets/IconesSubEmergencia/deslizamento.png')} style={styles.iconeEmergencia} />
                             <Text style={styles.textoEmergencia}>DESLIZAMENTO</Text>
@@ -394,7 +394,7 @@ export function SubEmergencias({ Emergencia, setPageI, setSubEmergenciaI, setEme
 
                         <TouchableOpacity style={styles.emergencia} onPress={() => {
                             setPageI("Outros"),
-                            setEmergenciaI("natureza")
+                            setEmergenciaI("Desastre Natural")
                         }}>
                             <Image source={require('../../assets/IconesEmergencia/outros.png')} style={styles.iconeEmergencia} />
                             <Text style={styles.textoEmergencia}>OUTRO TIPO</Text>
@@ -403,7 +403,7 @@ export function SubEmergencias({ Emergencia, setPageI, setSubEmergenciaI, setEme
 
                     {/*Rodapé*/}
                     <View style={styles.opcaoRodape}>
-                        <TouchableOpacity onPress={() => setPageI("Emergencias")}>
+                        <TouchableOpacity onPress={() => setPageI("Emergências")}>
                             <Image source={require('../../assets/voltar.png')} style={styles.iconeRodape} />
                         </TouchableOpacity>
                         <Text style={styles.textoRodape}>VOLTAR</Text>
@@ -411,7 +411,7 @@ export function SubEmergencias({ Emergencia, setPageI, setSubEmergenciaI, setEme
                 </View>
             </>
         )
-    } else if (Emergencia == "pessoas") {
+    } else if (Emergencia == "Resgate de Pessoas") {
         return (
             <>
                 <View style={styles.containerScrollView}>
@@ -430,7 +430,7 @@ export function SubEmergencias({ Emergencia, setPageI, setSubEmergenciaI, setEme
                         <TouchableOpacity style={styles.emergencia} onPress={() => {
                             setPageI("Endereco"),
                             setSubEmergenciaI("RESGATE EM LOCAL ALTO")
-                            setEmergenciaI("pessoas")
+                            setEmergenciaI("Resgate de Pessoas")
                         }}>
                             <Image source={require('../../assets/IconesSubEmergencia/alto.png')} style={styles.iconeEmergencia} />
                             <Text style={styles.textoEmergencia}>RESGATE EM LOCAL ALTO</Text>
@@ -439,7 +439,7 @@ export function SubEmergencias({ Emergencia, setPageI, setSubEmergenciaI, setEme
                         <TouchableOpacity style={styles.emergencia} onPress={() => {
                             setPageI("Endereco"),
                             setSubEmergenciaI("RESGATE EM DESTROÇOS")
-                            setEmergenciaI("pessoas")
+                            setEmergenciaI("Resgate de Pessoas")
                         }}>
                             <Image source={require('../../assets/IconesSubEmergencia/destrocos.png')} style={styles.iconeEmergencia} />
                             <Text style={styles.textoEmergencia}>RESGATE EM DESTROÇOS</Text>
@@ -450,7 +450,7 @@ export function SubEmergencias({ Emergencia, setPageI, setSubEmergenciaI, setEme
                         <TouchableOpacity style={styles.emergencia} onPress={() => {
                             setPageI("Endereco"),
                             setSubEmergenciaI("RESGATE EM LOCAL FECHADO")
-                            setEmergenciaI("pessoas")
+                            setEmergenciaI("Resgate de Pessoas")
                         }}>
                             <Image source={require('../../assets/IconesSubEmergencia/presa.png')} style={styles.iconeEmergencia} />
                             <Text style={styles.textoEmergencia}>RESGATE EM LOCAL FEHCADO</Text>
@@ -458,7 +458,7 @@ export function SubEmergencias({ Emergencia, setPageI, setSubEmergenciaI, setEme
 
                         <TouchableOpacity style={styles.emergencia} onPress={() => {
                             setPageI("Outros"),
-                            setEmergenciaI("pessoas")
+                            setEmergenciaI("Resgate de Pessoas")
                         }}>
                             <Image source={require('../../assets/IconesEmergencia/outros.png')} style={styles.iconeEmergencia} />
                             <Text style={styles.textoEmergencia}>OUTRO TIPO</Text>
@@ -468,7 +468,7 @@ export function SubEmergencias({ Emergencia, setPageI, setSubEmergenciaI, setEme
 
                     {/*Rodapé*/}
                     <View style={styles.opcaoRodape}>
-                        <TouchableOpacity onPress={() => setPageI("Emergencias")}>
+                        <TouchableOpacity onPress={() => setPageI("Emergências")}>
                             <Image source={require('../../assets/voltar.png')} style={styles.iconeRodape} />
                         </TouchableOpacity>
                         <Text style={styles.textoRodape}>VOLTAR</Text>

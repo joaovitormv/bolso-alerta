@@ -3,40 +3,24 @@ import { styles } from './style';
 import { IPage} from "../../../App";
 import { Ionicons } from '@expo/vector-icons';
 
-export function Cadastro ({setPageI}: IPage){
+export function Login ({setPageI}: IPage){
   return (
     <View style={styles.container}>
       <Image source={require('../../assets/logo.png')} style={styles.logo} />
       <View style={styles.form}>
         <View style={styles.inputContainer}>
-          <Ionicons name="person" size={24} color={"black"}/>
-          <TextInput placeholder="Nome completo" style={styles.input} />
-        </View>
-        <View style={styles.inputContainer}>
           <Ionicons name="mail" size={24} color={"black"}/>
           <TextInput placeholder="E-mail" style={styles.input} keyboardType="email-address" />
-        </View>
-        <View style={styles.inputContainer}>
-          <Ionicons name="call-outline" size={24} color={"black"}/>
-          <TextInput placeholder="Telefone" style={styles.input} keyboardType="phone-pad" />
-        </View>
-        <View style={styles.inputContainer}>
-          <Ionicons name="id-card" size={24} color={"black"}/>
-          <TextInput placeholder="RG de PCD" style={styles.input} />
         </View>
         <View style={styles.inputContainer}>
           <Ionicons name="lock-closed" size={24} color={"black"}/>
           <TextInput placeholder="Senha" style={styles.input} secureTextEntry />
         </View>
-        <View style={styles.inputContainer}>
-          <Ionicons name="bag-check-sharp" size={24} color={"black"}/>
-          <TextInput placeholder="Confirmar senha" style={styles.input} secureTextEntry />
-        </View>
         <TouchableOpacity onPress={() => setPageI("Emergências")} style={styles.button}>
-          <Text style={styles.buttonText}>Cadastrar</Text>
+          <Text style={styles.buttonText}>Entrar</Text>
         </TouchableOpacity>
-        <TouchableOpacity onPress={() => setPageI("Login")}>
-          <Text style={styles.botaoLogin}>Entrar</Text>
+        <TouchableOpacity onPress={() => setPageI("Cadastro")}>
+          <Text style={styles.botaoLogin}>Cadastrar</Text>
         </TouchableOpacity>
       </View>
       <TouchableOpacity style={styles.emergencyButton} onPress={() => setPageI("Emergências")}>

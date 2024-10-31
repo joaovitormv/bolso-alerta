@@ -79,7 +79,7 @@ export const styles = StyleSheet.create({
     inputEndereco: {
       width: 300,
       fontFamily: "Hanuman_900Black",
-      fontSize: 26,
+      fontSize: 24,
       borderWidth: 2,
       marginBottom: 20,
       paddingLeft: 10
@@ -87,5 +87,55 @@ export const styles = StyleSheet.create({
     caixaInputs: {
       display: 'flex',
       height: 300
-    }
+    },
+    caixaTextoEndereco: {
+      marginTop: 30,
+      padding: 20,
+      borderWidth: 2,
+      borderColor: 'black',
+      borderRadius: 20
+    },
+    textoEndereco: {
+      fontFamily: "Hanuman_900Black",
+      fontSize: 19,
+      textAlign: 'center',
+      width: 250
+    },
+    textoConfirmar: {
+      fontSize: 36,
+      fontFamily: "Hanuman_900Black",
+      paddingTop: 30,
+      width: 270,
+      textAlign: 'center'
+    },
+    botaoConfirmar: {
+      backgroundColor: colors.fourth,
+      width: 160,
+      textAlign: 'center',
+      padding: 15,
+      marginTop: 60,
+      fontFamily: "Hanuman_900Black",
+      color: colors.white,
+      textShadowColor: colors.black,
+      textShadowRadius: 2,
+      borderRadius: 30,
+    },
+    aviso: {
+      width: 350,
+      textAlign: 'center',
+      fontFamily: "Hanuman_900Black",
+      paddingTop: 40,
+      fontSize: 20
+    },
+    opcaoRodape2: {
+      padding: 20
+    },
+    iconeRodape2: {
+      width: 50,
+      height: 50
+    },
+    textoRodape2: {
+      fontFamily: "Hanuman_900Black",
+      color: colors.primary
+    },
   })
